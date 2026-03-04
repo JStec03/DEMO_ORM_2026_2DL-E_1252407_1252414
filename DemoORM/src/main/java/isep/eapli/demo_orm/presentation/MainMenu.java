@@ -19,13 +19,13 @@ public class MainMenu {
 
 			switch (opcao) {
 				case 0:
-					System.out.println("Ending..."); [cite: 158]
+					System.out.println("Ending...");
 					break;
 				case 1:
-					System.out.println("Not yet implemented..."); [cite: 179]
+					System.out.println("Not yet implemented...");
 					break;
 				case 2:
-					System.out.println("Not yet implemented..."); [cite: 180]
+					System.out.println("Not yet implemented...");
 					break;
 
 				default:
@@ -38,9 +38,9 @@ public class MainMenu {
 
 	private static int menu() {
 		int option = -1;
-		System.out.println("");
+		System.out.println();
 		System.out.println("=============================");
-		System.out.println(" Rent a Car "); [cite: 18]
+		System.out.println(" Rent a Car ");
 		System.out.println("=============================\n");
 		System.out.println("1. Register Car Group");
 		System.out.println("2. List All Car Groups");
