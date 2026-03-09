@@ -12,6 +12,7 @@ import isep.eapli.demo_orm.util.Console;
  * @author mcn
  */
 public class MainMenu {
+	private static final CarGroupUI carGroupUI = new CarGroupUI();
     public static void mainLoop() {
 		int opcao = 0;
 		do {
@@ -22,10 +23,10 @@ public class MainMenu {
 					System.out.println("Ending...");
 					break;
 				case 1:
-					System.out.println("Not yet implemented...");
+					carGroupUI.registerCG();
 					break;
 				case 2:
-					System.out.println("Not yet implemented...");
+					carGroupUI.listGAs();
 					break;
 
 				default:
