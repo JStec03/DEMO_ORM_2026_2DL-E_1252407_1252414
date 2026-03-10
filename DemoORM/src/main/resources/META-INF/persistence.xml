@@ -3,8 +3,9 @@
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_2.xsd"
              version="3.0">
-  <persistence-unit name="default">
-      <class>isep.eapli.demo_orm.domain.CarGroup</class>
+  <persistence-unit name="DEMO_ORM">
+      <class>isep.eapli.demo_orm.domain.model.CarGroup</class>
+        <class>isep.eapli.demo_orm.domain.model.Car</class>
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:./db/rentacar"/>

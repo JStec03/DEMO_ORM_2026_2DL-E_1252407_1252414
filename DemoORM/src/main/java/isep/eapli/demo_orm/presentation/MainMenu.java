@@ -12,7 +12,14 @@ import isep.eapli.demo_orm.util.Console;
  * @author mcn
  */
 public class MainMenu {
-    public static void mainLoop() {
+
+	private static  CarGroupUI carGroupUI;
+
+	public  MainMenu(CarGroupUI carGroupUI) {
+		 this.carGroupUI = carGroupUI;
+	}
+
+    public void mainLoop() {
 		int opcao = 0;
 		do {
 			opcao = menu();
@@ -22,10 +29,22 @@ public class MainMenu {
 					System.out.println("Ending...");
 					break;
 				case 1:
-					System.out.println("Not yet implemented...");
+					carGroupUI.registerCG();
 					break;
 				case 2:
-					System.out.println("Not yet implemented...");
+					carGroupUI.listGAs();
+					break;
+				case 3:
+					carGroupUI.searchCarGroupById();
+					break;
+				case 4:
+					carGroupUI.searchCarGroupByName();
+					break;
+				case 5:
+					carGroupUI.searchCarGroupByDoors();
+					break;
+				case 6:
+					carGroupUI.searchCarGroupByClass();
 					break;
 
 				default:
@@ -44,6 +63,11 @@ public class MainMenu {
 		System.out.println("=============================\n");
 		System.out.println("1. Register Car Group");
 		System.out.println("2. List All Car Groups");
+		System.out.println("3. Search Car Group by ID");
+		System.out.println("4. Search Car Group by Name");
+		System.out.println("5. Search Car Group by Doors");
+		System.out.println("6. Search Car Group by Class");
+
 
 		System.out.println("=============================");
 		System.out.println("0. Exit\n\n");
