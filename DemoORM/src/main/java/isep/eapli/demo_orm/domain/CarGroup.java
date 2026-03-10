@@ -15,4 +15,6 @@ public class CarGroup {
     private String name;
     private int doors;
     private String carClass;
+    public  CarGroup() {}
+    public CarGroup(String nome, int portas, String classe) {}
 }
