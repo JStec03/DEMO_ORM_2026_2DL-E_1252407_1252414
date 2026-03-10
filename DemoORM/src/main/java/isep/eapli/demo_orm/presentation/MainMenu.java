@@ -14,9 +14,10 @@ import isep.eapli.demo_orm.util.Console;
 public class MainMenu {
 
 	private static  CarGroupUI carGroupUI;
-
-	public  MainMenu(CarGroupUI carGroupUI) {
+	private static CarUI carUI;
+	public  MainMenu(CarGroupUI carGroupUI, CarUI carUI) {
 		 this.carGroupUI = carGroupUI;
+		 this.carUI = carUI;
 	}
 
     public void mainLoop() {
@@ -46,6 +47,21 @@ public class MainMenu {
 				case 6:
 					carGroupUI.searchCarGroupByClass();
 					break;
+				case 7:
+					carUI.registerCar();
+					break;
+				case 8:
+					carUI.listCars();
+					break;
+				case 9:
+					carUI.searchCarById();
+					break;
+				case 10:
+					carUI.searchCarByBrand();
+					break;
+				case 11:
+					carUI.searchCarByLicensePlate();
+					break;
 
 				default:
 					System.out.println("Unrecognized option.");
@@ -67,6 +83,11 @@ public class MainMenu {
 		System.out.println("4. Search Car Group by Name");
 		System.out.println("5. Search Car Group by Doors");
 		System.out.println("6. Search Car Group by Class");
+		System.out.println("7. Register Car");
+		System.out.println("8. List All Cars");
+		System.out.println("9. Search Car by ID");
+		System.out.println("10. Search Car by Brand");
+		System.out.println("11. Search Car by License Plate");
 
 
 		System.out.println("=============================");
