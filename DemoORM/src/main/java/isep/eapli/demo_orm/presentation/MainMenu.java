@@ -13,11 +13,14 @@ import isep.eapli.demo_orm.util.Console;
  */
 public class MainMenu {
 
-	private static  CarGroupUI carGroupUI;
-	private static CarUI carUI;
-	public  MainMenu(CarGroupUI carGroupUI, CarUI carUI) {
+	private final   CarGroupUI carGroupUI;
+	private final CarUI carUI;
+	private final RentalContractUI rentalContractUI;
+	public  MainMenu(CarGroupUI carGroupUI, CarUI carUI, RentalContractUI rentalContractUI) {
 		 this.carGroupUI = carGroupUI;
 		 this.carUI = carUI;
+		 this.rentalContractUI = rentalContractUI;
+
 	}
 
     public void mainLoop() {
@@ -62,7 +65,15 @@ public class MainMenu {
 				case 11:
 					carUI.searchCarByLicensePlate();
 					break;
-
+				case 12:
+					rentalContractUI.registerRentalContract();
+					break;
+				case 13:
+					rentalContractUI.listRentalContracts();
+					break;
+				case 14:
+					rentalContractUI.searchRentalContractById();
+					break;
 				default:
 					System.out.println("Unrecognized option.");
 					break;
@@ -88,8 +99,9 @@ public class MainMenu {
 		System.out.println("9. Search Car by ID");
 		System.out.println("10. Search Car by Brand");
 		System.out.println("11. Search Car by License Plate");
-
-
+		System.out.println("12. Register Rental Contract");
+		System.out.println("13. List All Rental Contracts");
+		System.out.println("14. Search Rental Contract by ID");
 		System.out.println("=============================");
 		System.out.println("0. Exit\n\n");
 		option = Console.readInteger("Please choose an option");

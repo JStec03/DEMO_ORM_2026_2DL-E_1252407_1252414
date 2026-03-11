@@ -23,7 +23,9 @@ public class CarGroup {
         this.doors = doors;
         this.carClass = carClass;
     }
-
+    public Long getId() {
+        return id;
+    }
     @Override
     public String toString() {
         return String.format("CarGroup[id=%d, name='%s', doors=%d, class='%s']", id, name, doors, carClass);

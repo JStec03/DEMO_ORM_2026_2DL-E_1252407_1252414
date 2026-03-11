@@ -20,8 +20,9 @@ public class CarUI {
         String brand = Console.readLine("Brand:");
         String model = Console.readLine("Model:");
         String color = Console.readLine("Color:");
+        String groupIdStr = Console.readLine("Car group ID:");
 
-        controller.registerCar(licensePlate, brand, model, color);
+        controller.registerCar(licensePlate, brand, model, color, Long.valueOf(groupIdStr));
         System.out.println("Car registered successfully.");
     }
 

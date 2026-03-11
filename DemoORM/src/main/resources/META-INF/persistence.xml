@@ -5,7 +5,15 @@
              version="3.0">
   <persistence-unit name="DEMO_ORM">
       <class>isep.eapli.demo_orm.domain.model.CarGroup</class>
-        <class>isep.eapli.demo_orm.domain.model.Car</class>
+      <class>isep.eapli.demo_orm.domain.model.Car</class>
+      <class>isep.eapli.demo_orm.domain.model.Client</class>
+      <class>isep.eapli.demo_orm.domain.model.CorporateClient</class>
+      <class>isep.eapli.demo_orm.domain.model.IndividualClient</class>
+      <class>isep.eapli.demo_orm.domain.model.RentalContract</class>
+      <class>isep.eapli.demo_orm.domain.model.AuthorizedDriver</class>
+      <class>isep.eapli.demo_orm.domain.model.Payment</class>
+      <class>isep.eapli.demo_orm.domain.model.CheckPayment</class>
+        <class>isep.eapli.demo_orm.domain.model.CardPayment</class>
     <properties>
       <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver"/>
       <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:./db/rentacar"/>
